@@ -7,7 +7,8 @@ const tripsController = require('../controllers/trips');
 // define route for trips endpoint
 router
     .route('/trips')
-    .get(tripsController.tripsList);
+    .get(tripsController.tripsList) //Get Method routes tripList
+    .post(tripsController.tripsAddTrip); //Post Method Adds a Trip
 
 router
     .route('/trips/:tripCode') 
