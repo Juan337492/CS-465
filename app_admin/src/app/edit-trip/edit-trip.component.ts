@@ -5,14 +5,11 @@ import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from "@angula
 import { TripDataService } from '../services/trip-data.service';
 import { Trip } from '../models/trip';
 
-// Import DatePipe
-import { DatePipe } from '@angular/common';
 
 @Component({
   selector: 'app-edit-trip',
   standalone: true,
   imports: [CommonModule, ReactiveFormsModule],
-  providers: [DatePipe],
   templateUrl: './edit-trip.component.html',
   styleUrl: './edit-trip.component.css'
 })
@@ -48,7 +45,7 @@ start: ["", Validators.required],
 resort: ["", Validators.required],
 perPerson: ["", Validators.required],
 image: ["", Validators.required],
-description: ['', Validators.required]
+description: ["", Validators.required]
 })
 
 this.tripDataService.getTrip(tripCode)
@@ -75,8 +72,7 @@ console.log('Error: ' + error);
 
 public onSubmit() {
 this.submitted = true;
-if(this.editForm.valid)
-{
+if(this.editForm.valid) {
 this.tripDataService.updateTrip(this.editForm.value)
 .subscribe({
 next: (value: any) => {
