@@ -71,3 +71,10 @@ This course has been instrumental in advancing my professional goal of becoming 
 *   **Security Implementation**: Understanding and applying authentication techniques, making applications more secure and professional.
 
 By learning to build scalable, secure, and user-friendly web applications, I feel more confident building full-stack applications. The skills acquired in this course, such as designing reusable components and efficiently managing data with NoSQL databases, have equipped me with the tools to tackle real-world software challenges.
+
+<br>
+<img src="put.png" alt="web app" style="width="400""/>
+<br>
+<img src="postForm.png" alt="web app" style="width="400""/>
+<br>
+<img src="post.png" alt="web app" style="width="400""/>
